@@ -83,7 +83,8 @@ aside{
 .contact{
     height:15px;
     display:flex ;
-    justify-content:space-between ;
+    justify-content:flex-start;
+    gap:29px;
 
 }
 .conimg{
