@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        body{
+            padding:opx ;
+            margin:5px ;
+
+        }
+        @keyframes body{
+            49%{
+                filter:hue-rotate(129deg);
+            }
+            100%{
+                filter:hue-rotate(360deg);
+            }
+        }
+
+        @keyframes typing1 {
+    from {
+      width: 0;
+      opacity:0.5 ;
+      transform: scale(0.5);
+    }
+    to {
+      width: 100%;
+      font-size:22px ;
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+        h1{
+            max-height:fit-content;
+            max-width:auto;
+            text-align: center;
+            background:linear-gradient(90deg,red,violet,yellow,rgb(124, 228, 124));
+            word-spacing:5px ;
+            animation:body 2s linear infinite;
+
+        }
+        button{
+            text-align: center;
+            height:9% ;
+            width:100%;
+            background:linear-gradient(to left,violet,rgb(124, 228, 124));
+            font-size:23px ;
+            border-radius:25px ;
+            white-space: nowrap;
+            animation: typing1 2s linear forwards;
+        }
+        .project{
+            margin-left:15px ;
+            display:flex;
+            max-height:399px ;
+            max-width:100% ;
+        }
+        .clone{
+            border-radius:125px 125px 49px 49px ;
+            height:439px;
+            width:48.4%;
+            
+        }
+        .sps{
+            border-radius:125px 125px 49px 49px ;
+            margin-top:45px ;
+            height:354px;
+            width:48.4%;
+        }
+        .project1{
+            margin-left:15px ;
+            display:flex;
+            max-height:399px ;
+            max-width:100% ;
+        }
+
+        .calculator{
+            border-radius:125px 125px 49px 49px ;
+            margin-left:25px ;
+            height:439px;
+            width:48.4%; 
+
+        }
+        .swg{
+            border-radius:125px 125px 49px 49px ;
+            margin-top:45px ;
+            margin-left:25px ;
+            height:399px;
+            width:49.5%; 
+        }
+        img{
+            max-height: fit-content;
+            max-width: fit-content;
+            object-fit: cover;
+            border-radius:49px ;
+            border:3px solid rgb(247, 86, 113) ;
+        }
+    </style>
+</head>
+<body>
+    <h1>PROJECT MADE BY HTML,CSS AND JAVASCRIPT</h1>
+
+    <div class="project">
+       <div class="clone">
+            <button>Amazon-Clone</button>
+            <a href="https://mdakifakhtar.github.io/amazon-clone/"><img src="clone.png" alt="clone img" target="_main"></a>
+       </div>
+
+       <div class="calculator">
+        <button>Calculator</button>
+        <a href="https://mdakifakhtar.github.io/calculator/"><img src="calcnew.jpg" alt="clone img" target="_main"></a>
+
+       </div>
+    </div>
+
+    <div class="project1" style="margin-top:5px ;">
+        <div class="sps">
+            <button>Stone Paper Scissors</button>
+            <a href="https://mdakifakhtar.github.io/stone-paper-seissor/"><img src="spsmain.png" alt="sps img" target="_main"></a>
+        </div>
+        <div class="swg">
+        <button>Snake Water Gun</button>
+        </div>
+    </div>
+
+</body>
+</html>
