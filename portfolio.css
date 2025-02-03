@@ -154,6 +154,8 @@ img{
     object-fit:cover;
     border-radius:13px ;
     background-blend-mode: color-burn;
+    border-radius:50% ;
+
 }
 
 .about{
