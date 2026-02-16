@@ -7,23 +7,19 @@
 
 <style>
 
-/* BODY */
 body{
     margin:0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family:'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color:white;
 }
 
-/* TITLE */
 h1{
     text-align:center;
     padding:30px;
     font-size:34px;
-    letter-spacing:2px;
 }
 
-/* PROJECT GRID */
 .projects{
     display:flex;
     justify-content:center;
@@ -32,47 +28,46 @@ h1{
     padding:40px;
 }
 
-/* CARD DESIGN */
+/* CARD */
 .card{
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(12px);
     border-radius:20px;
     padding:30px 20px;
     width:300px;
+    min-height:260px; /* Equal height */
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between; /* Push button down */
+
     text-align:center;
     box-shadow: 0 0 20px rgba(0,255,255,0.2);
-    transition: 0.4s ease;
+    transition:0.4s ease;
 }
 
 .card:hover{
-    transform: translateY(-12px);
-    box-shadow: 0 0 35px cyan;
+    transform:translateY(-10px);
+    box-shadow:0 0 35px cyan;
 }
 
-/* CARD TEXT */
 .card h2{
-    margin-bottom:15px;
     font-size:20px;
+    margin-bottom:10px;
 }
 
 .card p{
     font-size:14px;
     color:#ccc;
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
-/* BUTTON WRAPPER */
-.buttons{
-    display:flex;
-    justify-content:center;
-}
-
-/* LIVE BUTTON */
+/* BUTTON */
 .live-btn{
-    width:80%;
+    display:block;
+    width:100%;
     padding:12px 0;
     border-radius:30px;
-    text-align:center;
     text-decoration:none;
     background: linear-gradient(90deg, #56ccf2, #2f80ed);
     color:white;
@@ -81,7 +76,7 @@ h1{
 }
 
 .live-btn:hover{
-    transform:scale(1.07);
+    transform:scale(1.05);
     box-shadow:0 0 20px rgba(0,255,255,0.6);
 }
 
@@ -101,60 +96,52 @@ h1{
 
 <div class="projects">
 
-    <!-- AI Project -->
     <div class="card">
-        <h2>🫀 Heart Disease Prediction (AI)</h2>
-        <p>Machine Learning model deployed using Flask & Render.</p>
-
-        <div class="buttons">
-            <a href="https://heart-disease-prediction-1176.onrender.com"
-               target="_blank"
-               class="live-btn">
-               Try AI Model
-            </a>
+        <div>
+            <h2>🫀 Heart Disease Prediction (AI)</h2>
+            <p>Machine Learning model deployed using Flask & Render.</p>
         </div>
+        <a href="https://heart-disease-prediction-1176.onrender.com"
+           target="_blank"
+           class="live-btn">
+           Try AI Model
+        </a>
     </div>
 
-    <!-- Amazon Clone -->
     <div class="card">
-        <h2>Amazon Clone</h2>
-        <p>Frontend e-commerce website built using HTML & CSS.</p>
-
-        <div class="buttons">
-            <a href="https://mdakifakhtar.github.io/amazon-clone/"
-               target="_blank"
-               class="live-btn">
-               Live Demo
-            </a>
+        <div>
+            <h2>Amazon Clone</h2>
+            <p>Frontend e-commerce website built using HTML & CSS.</p>
         </div>
+        <a href="https://mdakifakhtar.github.io/amazon-clone/"
+           target="_blank"
+           class="live-btn">
+           Live Demo
+        </a>
     </div>
 
-    <!-- Calculator -->
     <div class="card">
-        <h2>Calculator</h2>
-        <p>JavaScript-based functional calculator web app.</p>
-
-        <div class="buttons">
-            <a href="https://mdakifakhtar.github.io/calculator/"
-               target="_blank"
-               class="live-btn">
-               Live Demo
-            </a>
+        <div>
+            <h2>Calculator</h2>
+            <p>JavaScript-based functional calculator web app.</p>
         </div>
+        <a href="https://mdakifakhtar.github.io/calculator/"
+           target="_blank"
+           class="live-btn">
+           Live Demo
+        </a>
     </div>
 
-    <!-- Stone Paper Scissors -->
     <div class="card">
-        <h2>Stone Paper Scissors</h2>
-        <p>Interactive game using JavaScript logic.</p>
-
-        <div class="buttons">
-            <a href="https://mdakifakhtar.github.io/stone-paper-seissor/"
-               target="_blank"
-               class="live-btn">
-               Live Demo
-            </a>
+        <div>
+            <h2>Stone Paper Scissors</h2>
+            <p>Interactive game using JavaScript logic.</p>
         </div>
+        <a href="https://mdakifakhtar.github.io/stone-paper-seissor/"
+           target="_blank"
+           class="live-btn">
+           Live Demo
+        </a>
     </div>
 
 </div>
