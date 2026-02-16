@@ -7,20 +7,23 @@
 
 <style>
 
+/* BODY */
 body{
     margin:0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color:white;
 }
 
+/* TITLE */
 h1{
     text-align:center;
-    padding:25px;
-    font-size:32px;
+    padding:30px;
+    font-size:34px;
     letter-spacing:2px;
 }
 
+/* PROJECT GRID */
 .projects{
     display:flex;
     justify-content:center;
@@ -29,12 +32,12 @@ h1{
     padding:40px;
 }
 
-/* CARD */
+/* CARD DESIGN */
 .card{
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(12px);
     border-radius:20px;
-    padding:25px;
+    padding:30px 20px;
     width:300px;
     text-align:center;
     box-shadow: 0 0 20px rgba(0,255,255,0.2);
@@ -42,58 +45,44 @@ h1{
 }
 
 .card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-12px);
     box-shadow: 0 0 35px cyan;
 }
 
+/* CARD TEXT */
 .card h2{
-    margin-bottom:10px;
+    margin-bottom:15px;
     font-size:20px;
 }
 
 .card p{
     font-size:14px;
     color:#ccc;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
-/* BUTTON CONTAINER */
+/* BUTTON WRAPPER */
 .buttons{
     display:flex;
-    flex-direction:column;
-    gap:10px;
+    justify-content:center;
 }
 
-/* LIVE DEMO BUTTON */
+/* LIVE BUTTON */
 .live-btn{
-    padding:10px;
-    border-radius:25px;
+    width:80%;
+    padding:12px 0;
+    border-radius:30px;
+    text-align:center;
     text-decoration:none;
-    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    background: linear-gradient(90deg, #56ccf2, #2f80ed);
     color:white;
-    font-weight:bold;
-    transition:0.3s;
+    font-weight:600;
+    transition:0.3s ease;
 }
 
 .live-btn:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 15px cyan;
-}
-
-/* VIEW CODE BUTTON */
-.code-btn{
-    padding:10px;
-    border-radius:25px;
-    text-decoration:none;
-    background: linear-gradient(45deg, #8e2de2, #4a00e0);
-    color:white;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.code-btn:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 15px violet;
+    transform:scale(1.07);
+    box-shadow:0 0 20px rgba(0,255,255,0.6);
 }
 
 /* RESPONSIVE */
@@ -121,13 +110,7 @@ h1{
             <a href="https://heart-disease-prediction-1176.onrender.com"
                target="_blank"
                class="live-btn">
-               Live Demo
-            </a>
-
-            <a href="https://github.com/mdakifAkhtar"
-               target="_blank"
-               class="code-btn">
-               View Code
+               Try AI Model
             </a>
         </div>
     </div>
@@ -143,12 +126,6 @@ h1{
                class="live-btn">
                Live Demo
             </a>
-
-            <a href="https://github.com/mdakifAkhtar"
-               target="_blank"
-               class="code-btn">
-               View Code
-            </a>
         </div>
     </div>
 
@@ -163,12 +140,6 @@ h1{
                class="live-btn">
                Live Demo
             </a>
-
-            <a href="https://github.com/mdakifAkhtar"
-               target="_blank"
-               class="code-btn">
-               View Code
-            </a>
         </div>
     </div>
 
@@ -182,12 +153,6 @@ h1{
                target="_blank"
                class="live-btn">
                Live Demo
-            </a>
-
-            <a href="https://github.com/mdakifAkhtar"
-               target="_blank"
-               class="code-btn">
-               View Code
             </a>
         </div>
     </div>
