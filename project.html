@@ -16,7 +16,7 @@ body{
 
 h1{
     text-align:center;
-    padding:20px;
+    padding:25px;
     font-size:32px;
     letter-spacing:2px;
 }
@@ -29,20 +29,21 @@ h1{
     padding:40px;
 }
 
+/* CARD */
 .card{
     background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
     border-radius:20px;
-    padding:20px;
+    padding:25px;
     width:300px;
     text-align:center;
     box-shadow: 0 0 20px rgba(0,255,255,0.2);
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .card:hover{
     transform: translateY(-10px);
-    box-shadow: 0 0 30px cyan;
+    box-shadow: 0 0 35px cyan;
 }
 
 .card h2{
@@ -53,24 +54,49 @@ h1{
 .card p{
     font-size:14px;
     color:#ccc;
+    margin-bottom:20px;
 }
 
-.card a{
-    display:inline-block;
-    margin-top:15px;
-    padding:10px 20px;
+/* BUTTON CONTAINER */
+.buttons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+/* LIVE DEMO BUTTON */
+.live-btn{
+    padding:10px;
     border-radius:25px;
     text-decoration:none;
-    background: linear-gradient(45deg, cyan, blue);
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
     color:white;
     font-weight:bold;
     transition:0.3s;
 }
 
-.card a:hover{
-    background: linear-gradient(45deg, blue, cyan);
+.live-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px cyan;
 }
 
+/* VIEW CODE BUTTON */
+.code-btn{
+    padding:10px;
+    border-radius:25px;
+    text-decoration:none;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.code-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px violet;
+}
+
+/* RESPONSIVE */
 @media (max-width:768px){
     .projects{
         flex-direction:column;
@@ -85,32 +111,85 @@ h1{
 <h1>🚀 My Projects</h1>
 
 <div class="projects">
-         <!-- AI Project -->
+
+    <!-- AI Project -->
     <div class="card">
         <h2>🫀 Heart Disease Prediction (AI)</h2>
         <p>Machine Learning model deployed using Flask & Render.</p>
-        <a href="https://heart-disease-prediction-1176.onrender.com" target="_blank"> Live Demo </a>
+
+        <div class="buttons">
+            <a href="https://heart-disease-prediction-1176.onrender.com"
+               target="_blank"
+               class="live-btn">
+               Live Demo
+            </a>
+
+            <a href="https://github.com/mdakifAkhtar"
+               target="_blank"
+               class="code-btn">
+               View Code
+            </a>
+        </div>
     </div>
-    
+
     <!-- Amazon Clone -->
     <div class="card">
         <h2>Amazon Clone</h2>
         <p>Frontend e-commerce website built using HTML & CSS.</p>
-        <a href="https://mdakifakhtar.github.io/amazon-clone/" target="_blank">Live Demo </a>
+
+        <div class="buttons">
+            <a href="https://mdakifakhtar.github.io/amazon-clone/"
+               target="_blank"
+               class="live-btn">
+               Live Demo
+            </a>
+
+            <a href="https://github.com/mdakifAkhtar"
+               target="_blank"
+               class="code-btn">
+               View Code
+            </a>
+        </div>
     </div>
 
     <!-- Calculator -->
     <div class="card">
         <h2>Calculator</h2>
         <p>JavaScript-based functional calculator web app.</p>
-        <a href="https://mdakifakhtar.github.io/calculator/" target="_blank">View Project</a>
+
+        <div class="buttons">
+            <a href="https://mdakifakhtar.github.io/calculator/"
+               target="_blank"
+               class="live-btn">
+               Live Demo
+            </a>
+
+            <a href="https://github.com/mdakifAkhtar"
+               target="_blank"
+               class="code-btn">
+               View Code
+            </a>
+        </div>
     </div>
 
     <!-- Stone Paper Scissors -->
     <div class="card">
         <h2>Stone Paper Scissors</h2>
         <p>Interactive game using JavaScript logic.</p>
-        <a href="https://mdakifakhtar.github.io/stone-paper-seissor/" target="_blank">View Project</a>
+
+        <div class="buttons">
+            <a href="https://mdakifakhtar.github.io/stone-paper-seissor/"
+               target="_blank"
+               class="live-btn">
+               Live Demo
+            </a>
+
+            <a href="https://github.com/mdakifAkhtar"
+               target="_blank"
+               class="code-btn">
+               View Code
+            </a>
+        </div>
     </div>
 
 </div>
