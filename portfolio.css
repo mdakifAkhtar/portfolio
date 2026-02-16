@@ -16,6 +16,13 @@ body{
 }
 
 /* NAVBAR */
+
+
+nav h2{
+    font-weight:700;
+    letter-spacing:2px;
+}
+
 nav{
     position:fixed;
     width:100%;
@@ -26,13 +33,8 @@ nav{
     justify-content:space-between;
     align-items:center;
     backdrop-filter:blur(10px);
-    background:rgba(0,0,0,0.4);
+    background:rgba(0,0,0,0.6);
     z-index:1000;
-}
-
-nav h2{
-    font-weight:700;
-    letter-spacing:2px;
 }
 
 nav ul{
@@ -50,6 +52,43 @@ nav ul li a{
 nav ul li a:hover{
     color:cyan;
 }
+
+/* DROPDOWN */
+.dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:30px;
+    left:0;
+    background:#111;
+    padding:10px 0;
+    border-radius:8px;
+    display:none;
+    flex-direction:column;
+    min-width:160px;
+}
+
+.dropdown-menu li{
+    padding:8px 15px;
+}
+
+.dropdown-menu li a{
+    color:white;
+    display:block;
+}
+
+.dropdown-menu li a:hover{
+    background:rgba(0,255,255,0.2);
+}
+
+.dropdown:hover .dropdown-menu{
+    display:flex;
+}
+
+
+
 
 /* HERO */
 .hero{
