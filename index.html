@@ -1,88 +1,75 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="icon" type="image/png" style="height:32px ;width:32px ;" href="akifport.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="portfolio.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Akif | AI & ML Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <div class="main">
-        <h1>Portfo<span style="color:red">lio</span></h1>
-        <div class="hero">
-          <a class="heroo" href="#" style="text-decoration:none ;">Home</a>
-          <a class="heroo" href="#" style="text-decoration:none ;">About me</a>
-          <a class="heroo" href="project.html" style="text-decoration:none;">Projects</a>
-          <a class="heroo" href="#" style="margin-right:13px ;text-decoration:none;">Contact</a>
-        </div>
+
+<nav>
+    <h2>Akif.dev</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Mohammad Akif Akhtar</h1>
+    <h3>AI & ML Engineer | Web Developer</h3>
+    <button onclick="window.location.href='project.html'">
+        View My Projects
+    </button>
+</section>
+
+<section class="about" id="about">
+    <img src="akifport.jpg" alt="Mohammad Akif Profile Image">
+
+    <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+            I am an AI & Machine Learning Engineering student passionate about 
+            building intelligent systems and modern web applications.
+            I enjoy deploying ML models and creating responsive user interfaces.
+        </p>
     </div>
+</section>
 
+<section class="skills">
+    <h2>Skills</h2>
+    <div class="skill-bars">
 
-    <div class="info">
-        <aside>
-            <h4 style="color:white">Hello I'm</h4>
-            <h2 style="color:red">Mohammad <span style="color:white">Akif&nbsp</span>Akhtar</h2>
-            <h3 style="font-size:21px;color:white ;">Ai&Ml<span style="color:red; font-size:39px ;;">&nbspEngineer</span></h3>
-            <a href="example.pdf"download="example.pdf"><button>Download CV <i class="fa-solid fa-arrow-down"></i></button></a>
-            <div class="contact">
-                <a href="https://www.instagram.com/the__akif?igsh=MWE5YTJldnJrMzZjdw>instagram"target="_self"style="text-decoration:none"><img class="conimg" src ="https://icon2.cleanpng.com/20240112/ejq/transparent-instagram-logo-colorful-camera-with-red-light-on-black-1710925877675.webp"></a>
-                <a href="https://wa.me/qr/NTTHISIEEUUFK1"target="_self"style="text-decoration:none"><img class="conimg" src ="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"></a>
-                <a href=" https://www.threads.net/@thisis_akif?xmt=AQGz-p1_ptrFZofY1T2OBqTvbGjMUHAYad3nqlYnxP1brO4"target="_self"style="text-decoration:none"><img class="conimg" src="data:image/png;base64,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"width="29"></a>
-                <a href="https://github.com/mdakifAkhtar"target="_self"><img class="conimg" src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png"></a>
-            
-            </div>
-        </aside>
+        <div class="skill">
+            <p>Web Development</p>
+            <div class="bar"><div class="progress"></div></div>
+        </div>
 
-        <figure>
-            <div class="img">
-                <img src="akifport.jpg" alt="akif img">
-            </div>
-        </figure>
+        <div class="skill">
+            <p>Machine Learning</p>
+            <div class="bar"><div class="progress"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>Python</p>
+            <div class="bar"><div class="progress"></div></div>
+        </div>
+
     </div>
+</section>
 
-    <div class="about">
-        <div class="aboutme">
-            <h4 style="color:red">About Me</h4>
-            <p1 style="font-size:29px ;">I'm <span style="color:red">Mohammad</span></p1><br>
-            <p1 style="font-size:28px ;">Web<span style="color:red;">&nbspDeveloper</span> Ai&Ml <span style="color:red">&nbspEngineer</span></p1><br>
-            <a style="font-size:16px;">Hi, I'm Mohammad Akif Akhtar, a passionate part-time web developer with a strong interest in AI and Machine Learning. Currently, I'm pursuing my studies in AI & ML Engineering at Quantum University, Roorkee, Uttarakhand.
-                 With experience in front-end and back-end web development, I love building dynamic, user-friendly, and responsive websites. My curiosity for artificial intelligence and machine learning drives me to explore how these technologies can enhance web applications and solve real-world problems.  
-                 I'm always eager to learn, experiment with new technologies, and take on challenging projects. Let's connect and create something amazing together!
-            </a>
-        </div>
-        <div class="skills">
-            <a style="font-size:39px ;">Skills</a><br><hr>
-            <a>Advance Communication skills</a><hr>
-            <a>College Project</a><hr>
-            <a>Motivated Attitude</a><hr>
-            <a>Social Media Platform</a><hr>
-            <a style="font-size:22px ;"><b>Languages:-</b>English & Hindi</a><hr>
-            <a style="font-size:21px ;font-weight: bold;">Programming Language :-</a><hr>
-            <li style="list-style:none ;">PYTHON</li><hr>
-            <li style="list-style:none ;"> ANSI C</li><hr>
-            <li style="list-style:none ;">HTML5</li><hr>
-            <li style="list-style:none ;">CSS3</li><hr>
-            <li style="list-style:none ;">JAVASCRIPT</li>
-        </div>
-    </div>
-
-    <div class="experience">
-        <div class="some-exp">
-            <p1 style="font-size:21px ; margin-left:79px ;">YOU CAN <span style="color:white">&nbspIMAGINE</span></p1><br>
-            <p1 style="font-size:21px ; margin-left:75px ;">I CAN <span style="color:white">&nbspDO</span></p1>
-        </div>
-        <div class="imgaiml">
-            <img style="height:255px;width:309px;border-radius:14px ;background-color:rgb(158, 20, 20) ;margin-left:25px ;" src="aiml2.jfif" alt="aiml img">
-        </div>
-        <div class="expskill">
-            <a>Web Development  &nbsp&nbsp&nbsp&nbsp&nbsp 79%</a><br><hr style="border:3px solid white">
-            <a>Web Design  &nbsp&nbsp&nbsp&nbsp&nbsp 75%</a><br><hr style="border:3px solid white">
-            <a>Software Development  &nbsp&nbsp&nbsp&nbsp&nbsp 73%</a><br><hr style="border:3px solid white">
-            <a>AI&ML Model Implement  &nbsp&nbsp&nbsp&nbsp&nbsp 43%</a><br><hr style="border:3px solid white">
-        </div>
-    </div>
+<footer>
+    © 2026 Mohammad Akif | AI Engineer Portfolio
+</footer>
 
 </body>
 </html>
